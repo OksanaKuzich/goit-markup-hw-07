@@ -27,34 +27,38 @@
     <!--Шапка-->
     <header class="header">
       <div class="container">
-        <a class="logo link" href="./index.html" lang="en"
-          >Web<span class="logo-dark">Studio</span></a
+        <a class="header__logo link" href="./index.html" lang="en"
+          >Web<span class="header__logo--dark">Studio</span></a
         >
 
         <nav class="nav">
-          <ul class="list">
-            <li class="list-item">
-              <a class="menu link active" href="./index.html">Студия</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a class="nav__link link nav__link--active" href="./index.html"
+                >Студия</a
+              >
             </li>
-            <li class="list-item">
-              <a class="menu link" href="./portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="list-item"><a class="menu link" href="">Контакты</a></li>
+            <li class="nav__item">
+              <a class="nav__link link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
-        <ul class="contacts">
-          <li class="contacts-item">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">
-              <svg class="icon-envelope">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon--envelope">
                 <use href="./images/icon/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a class="contacts-link link" href="tel:+380961111111">
-              <svg class="icon-smartphone">
+          <li class="contacts__item">
+            <a class="contacts__link link" href="tel:+380961111111">
+              <svg class="contacts__icon--smartphone">
                 <use href="./images/icon/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -68,51 +72,52 @@
       <!--Главная страница-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-header">Эффективные решения для вашего бизнеса</h1>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="btn" data-modal-open>
             Заказать услугу
           </button>
+          <!-- Форма -->
           <div class="backdrop is-hidden" data-modal>
             <div class="modal-wrapper">
               <!-- Форма -->
-              <b class="form-title">
+              <b class="form__title">
                 Оставьте свои данные, мы вам перезвоним
               </b>
               <form class="form">
-                <label for="name" class="form-label"
-                  ><span class="form-subtitle">Имя</span>
+                <label for="name" class="form__label"
+                  ><span class="form__subtitle">Имя</span>
                   <input
                     type="text"
-                    class="form-input"
+                    class="form__input"
                     name="user-name"
                     id="name"
                   />
-                  <svg class="icon-form">
+                  <svg class="form__icon">
                     <use href="./images/icon/sprite.svg#form-name"></use>
                   </svg>
                 </label>
 
-                <label for="tel" class="form-label"
-                  ><span class="form-subtitle">Телефон</span>
-                  <input type="tel" class="form-input" name="tel" id="tel" />
-                  <svg class="icon-form">
+                <label for="tel" class="form__label"
+                  ><span class="form__subtitle">Телефон</span>
+                  <input type="tel" class="form__input" name="tel" id="tel" />
+                  <svg class="form__icon">
                     <use href="./images/icon/sprite.svg#form-phone"></use></svg
                 ></label>
-                <label for="mail" class="form-label"
-                  ><span class="form-subtitle">Почта</span>
+                <label for="mail" class="form__label"
+                  ><span class="form__subtitle">Почта</span>
                   <input
                     type="email"
-                    class="form-input"
+                    class="form__input"
                     name="mail"
                     id="mail" />
-                  <svg class="icon-form">
+                  <svg class="form__icon">
                     <use href="./images/icon/sprite.svg#form-email"></use></svg
                 ></label>
-                <label for="comment" class="form-label form-label-last"
-                  ><span class="form-subtitle">Kомментарий</span>
+                <label for="comment" class="form__label form__label--last"
+                  ><span class="form__subtitle">Kомментарий</span>
                   <textarea
                     name="comment"
-                    class="form-comment"
+                    class="form__comment"
                     id="comment"
                     placeholder="Введите текст"
                     cols="30"
@@ -120,29 +125,29 @@
                   ></textarea>
                 </label>
 
-                <label for="policy" class="form-policy">
+                <label for="policy" class="checkbox__label">
                   <input
                     type="checkbox"
-                    class="form-checkbox-policy visually-hidden"
+                    class="checkbox__input visually-hidden"
                     name="policy"
                     id="policy"
                   />
-                  <span class="custom-checkbox">
-                    <svg class="icon-check">
+                  <span class="checkbox__custom">
+                    <svg class="checkbox__icon">
                       <use href="./images/icon/sprite.svg#form-check"></use>
                     </svg>
                   </span>
-                  <span class="form-checkbox-subtitle"
+                  <span class="checkbox__subtitle"
                     >Соглашаюсь с рассылкой и принимаю
                   </span>
-                  <a class="form-conditions">Условия договора</a></label
+                  <a class="checkbox__link">Условия договора</a></label
                 >
 
                 <button type="submit" class="form-btn btn">Отправить</button>
               </form>
 
               <button type="button" class="modal-btn" data-modal-close>
-                <svg class="icon-close">
+                <svg class="form__icon--close">
                   <use href="./images/icon/sprite.svg#icon-close"></use>
                 </svg>
               </button>
@@ -636,8 +641,8 @@
     <footer class="footer">
       <div class="container footer-text">
         <div>
-          <a class="logo link" href="./index.html" lang="en"
-            >Web<span class="logo-white">Studio</span></a
+          <a class="header__logo link" href="./index.html" lang="en"
+            >Web<span class="footer__logo--white">Studio</span></a
           >
           <address class="adress">
             <p class="adresa">г. Киев, пр-т Леси Украинки, 26</p>

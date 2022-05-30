@@ -13,6 +13,7 @@
   --border-footer-color: #ececec;
   --border-cards-color: #eeeeee;
 }
+
 body {
   background-color: var(--background-color);
   font-family: "Roboto", sans-serif;
@@ -68,7 +69,7 @@ ul {
   border-bottom: 1px solid var(--border-footer-color);
 }
 
-.logo {
+.header__logo {
   display: inline-block;
   margin-right: 93px;
 
@@ -79,19 +80,19 @@ ul {
   line-height: 1.19;
 }
 
-.logo-dark {
+.header__logo--dark {
   color: var(--logo-text-color);
 }
 
-.logo-white {
+.footer__logo--white {
   color: var(--background-color);
 }
 
-.list .list-item + .list-item {
+.nav__list .nav__item + .nav__item {
   margin-left: 50px;
 }
 
-.menu {
+.nav__link {
   position: relative;
   display: block;
 
@@ -104,12 +105,12 @@ ul {
   color: var(--main-text-color);
 }
 
-.active {
+.nav__link--active {
   color: var(--accent-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu.active::after {
+.nav__link.nav__link--active::after {
   position: absolute;
   content: "";
 
@@ -124,13 +125,13 @@ ul {
   bottom: -1px;
 }
 
-.contacts {
+.contacts__list {
   display: flex;
   margin-left: auto;
   justify-content: flex-end;
 }
 
-.contacts-link {
+.contacts__link {
   display: flex;
   align-items: center;
 
@@ -146,11 +147,11 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts .contacts-item + .contacts-item {
+.contacts__list .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
-.icon-smartphone {
+.contacts__icon--smartphone {
   width: 12px;
   height: 16px;
   margin-right: 10px;
@@ -158,7 +159,7 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-envelope {
+.contacts__icon--envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -166,13 +167,13 @@ ul {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-link:hover .icon-smartphone,
-.contacts-link:focus .icon-smartphone {
+.contacts__link:hover .contacts__icon--smartphone,
+.contacts__link:focus .contacts__icon--smartphone {
   fill: var(--accent-text-color);
 }
 
-.contacts-link:hover .icon-envelope,
-.contacts-link:focus .icon-envelope {
+.contacts__link:hover .contacts__icon--envelope,
+.contacts__link:focus .contacts__icon--envelope {
   fill: var(--accent-text-color);
 }
 
@@ -198,7 +199,7 @@ ul {
   margin-right: auto;
 }
 
-.hero-header {
+.hero__title {
   /* padding-top: 200px; */
   margin-bottom: 30px;
   margin-left: auto;
@@ -549,7 +550,7 @@ ul {
   padding-bottom: 60px;
 }
 
-.footer .logo {
+.footer .header__logo {
   margin-bottom: 20px;
 }
 
@@ -760,7 +761,7 @@ ul {
 }
 
 /* Стили для форм */
-.form-title {
+.form__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -774,7 +775,7 @@ ul {
   margin-right: auto;
 }
 
-.form-label {
+.form__label {
   position: relative;
 
   display: flex;
@@ -784,15 +785,15 @@ ul {
   margin-bottom: 10px;
 }
 
-.form-label-last {
+.form__label--last {
   margin-bottom: 20px;
 }
 
-.form-label:first-child {
+.form__label:first-child {
   margin-top: 12px;
 }
 
-.form-input {
+.form__input {
   height: 40px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -806,31 +807,31 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-label:hover .form-subtitle,
-.form-label:focus-within .form-subtitle {
+.form__label:hover .form__subtitle,
+.form__label:focus-within .form__subtitle {
   color: var(--accent-text-color);
 }
 
-.form-label:hover .form-input,
-.form-label:focus-within .form-input {
+.form__label:hover .form__input,
+.form__label:focus-within .form__input {
   border-color: var(--accent-text-color);
 }
 
-.form-label:hover .icon-form,
-.form-label:focus-within .icon-form {
+.form__label:hover .form__icon,
+.form__label:focus-within .form__icon {
   fill: var(--accent-text-color);
 }
 
-.form-label:hover .form-comment,
-.form-label:focus-within .form-comment {
+.form__label:hover .form-comment,
+.form__label:focus-within .form-comment {
   border-color: var(--accent-text-color);
 }
 
-.modal-btn:hover .icon-close,
-.modal-btn:focus-within .icon-close {
+.modal-btn:hover .form__icon--close,
+.modal-btn:focus-within .form__icon--close {
   fill: var(--accent-text-color);
 }
-.form-comment {
+.form__comment {
   resize: none;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -844,7 +845,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-comment::placeholder {
+.form__comment::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -852,13 +853,13 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-policy {
+.form__policy {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.custom-checkbox {
+.checkbox__custom {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -877,7 +878,7 @@ ul {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-check {
+.checkbox__icon {
   width: 16px;
   height: 15px;
   opacity: 0;
@@ -887,16 +888,16 @@ ul {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-policy:focus-within .custom-checkbox,
-.form-policy:hover .custom-checkbox {
+.checkbox__label:focus-within .checkbox__customx,
+.checkbox__label:hover .checkbox__custom {
   border-color: var(--accent-text-color);
 }
 
-.form-checkbox-policy:checked + .custom-checkbox .icon-check {
+.checkbox__input:checked + .checkbox__custom .checkbox__icon {
   opacity: 1;
 }
 
-.form-checkbox-policy:checked ~ .custom-checkbox {
+.checkbox__input:checked ~ .checkbox__custom {
   border: none;
 }
 
@@ -904,14 +905,14 @@ ul {
   margin-top: 30px;
 }
 
-.form-conditions {
+.checkbox__link {
   color: var(--accent-text-color);
   text-decoration: underline;
 
   cursor: pointer;
 }
 
-.icon-form {
+.form__icon {
   position: absolute;
   bottom: 11px;
   left: 12px;
@@ -928,7 +929,7 @@ ul {
   height: 24px;
 }
 
-.form-subtitle {
+.form__subtitle {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -937,7 +938,7 @@ ul {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-checkbox-subtitle {
+.checkbox__subtitle {
   font-size: 14px;
   line-height: 1.71;
   color: var(--second-text-color);
@@ -945,7 +946,7 @@ ul {
   margin-right: 4px;
 }
 
-.icon-close {
+.form__icon--close {
   width: 18px;
   height: 18px;
 

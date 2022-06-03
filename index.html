@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
@@ -160,29 +161,29 @@
         <div class="container">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="benefits__list">
-            <li class="benefits-li icon-antenna">
-              <h3 class="benefits-list">Внимание к деталям</h3>
+            <li class="benefits__item benefits__icon--antenna">
+              <h3 class="benefits__title">Внимание к деталям</h3>
               <p>
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="benefits-li icon-clock">
-              <h3 class="benefits-list">Пунктуальность</h3>
+            <li class="benefits__item benefits__icon--clock">
+              <h3 class="benefits__title">Пунктуальность</h3>
               <p>
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="benefits-li icon-diagram">
-              <h3 class="benefits-list">Планирование</h3>
+            <li class="benefits__item benefits__icon--diagram">
+              <h3 class="benefits__title">Планирование</h3>
               <p>
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="benefits-li icon-astronaut">
-              <h3 class="benefits-list">Современные технологии</h3>
+            <li class="benefits__item benefits__icon--astronaut">
+              <h3 class="benefits__title">Современные технологии</h3>
               <p>
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -191,52 +192,54 @@
           </ul>
         </div>
       </section>
+
       <!--Блок услуги-->
       <section class="services">
         <div class="container">
-          <h2 class="services-header">Чем мы занимаемся</h2>
-          <ul class="services-list">
-            <li class="services-item">
+          <h2 class="services__title">Чем мы занимаемся</h2>
+          <ul class="services__list">
+            <li class="services__item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/box-1.jpg"
                 alt="Работа за ноутбуком"
                 width="370"
                 height="294"
               />
-              <p class="thumb">Десктопные приложения</p>
+              <p class="services__thumb">Десктопные приложения</p>
             </li>
-            <li class="services-item">
+            <li class="services__item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/box-2.jpg"
                 alt="Прием заявок от клиентов по телефону"
                 width="370"
                 height="294"
               />
-              <p class="thumb">Мобильные приложения</p>
+              <p class="services__thumb">Мобильные приложения</p>
             </li>
-            <li class="services-item">
+            <li class="services__item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/box-3.jpg"
                 alt="Выбор спектра цвета на планшете"
                 width="370"
                 height="294"
               />
-              <p class="thumb">Дизайнерские решения</p>
+              <p class="services__thumb">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
       </section>
+
       <!--Блок наша команда-->
       <section class="team">
         <div class="container">
-          <h2 class="services-header">Наша команда</h2>
+          <h2 class="services__title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/img-1.jpg"
                 alt="Продукт дизайнер Игорь Демьяненко"
                 width="270"
@@ -314,7 +317,7 @@
             </li>
             <li class="team-item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/img-2.jpg"
                 alt="Фронтэнд разработчик Ольга Репина"
                 width="270"
@@ -392,7 +395,7 @@
             </li>
             <li class="team-item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/img-3.jpg"
                 alt="Маркетолог Николай Тарасов"
                 width="270"
@@ -470,7 +473,7 @@
             </li>
             <li class="team-item">
               <img
-                class="img-no-gap"
+                class="img--no-gap"
                 src="./images/img-4.jpg"
                 alt="ЮИ дизайнер Михаил Ермаков"
                 width="270"
@@ -549,85 +552,86 @@
           </ul>
         </div>
       </section>
+
       <!-- Блок Наши партнеры -->
       <section class="partners">
         <div class="container">
-          <h2 class="services-header">Постоянные клиенты</h2>
-          <ul class="partners-list">
-            <li class="partners-item">
+          <h2 class="services__title">Постоянные клиенты</h2>
+          <ul class="partners__list">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="YA and GO"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners1"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners-item">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="Tagline there"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners2"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners-item">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="Company"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners3"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners-item">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="FOSTER PETERS"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners4"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners-item">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="Brand"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners5"></use>
                 </svg>
               </a>
             </li>
-            <li class="partners-item">
+            <li class="partners__item">
               <a
-                class="partners-link"
+                class="partners__link"
                 href=""
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="TAG LINE"
               >
-                <svg class="partners-icon">
+                <svg class="partners__icon">
                   <use href="./images/icon/sprite.svg#icon-partners6"></use>
                 </svg>
               </a>
@@ -636,23 +640,28 @@
         </div>
       </section>
     </main>
+
     <!-- Подвал -->
     <footer class="footer">
-      <div class="container footer-text">
+      <div class="container footer__content">
         <div>
           <a class="header__logo link" href="./index.html" lang="en"
             >Web<span class="footer__logo--white">Studio</span></a
           >
-          <address class="adress">
-            <p class="adresa">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="contscts-footer-list">
-              <li class="contacts-footer-item">
-                <a class="contacts-footer link" href="mailto:info@example.com"
+          <address class="contscts-footer">
+            <p class="contscts-footer__adress">
+              г. Киев, пр-т Леси Украинки, 26
+            </p>
+            <ul class="contscts-footer__list">
+              <li class="contacts-footer__item">
+                <a
+                  class="contacts-footer__link link"
+                  href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="contacts-footer-item">
-                <a class="contacts-footer link" href="tel:380991112233"
+              <li class="contacts-footer__item">
+                <a class="contacts-footer__link link" href="tel:380991112233"
                   >+38 (099) 111-22-33</a
                 >
               </li>
@@ -661,78 +670,79 @@
         </div>
 
         <div class="join">
-          <p class="join-title">Присоединяйтесь</p>
-          <ul class="footer-list">
-            <li class="footer-item">
+          <p class="join__title">Присоединяйтесь</p>
+          <ul class="join__list">
+            <li class="join__item">
               <a
-                class="footer-item-link"
+                class="join__link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="иконка Инстаграмм"
               >
-                <svg class="footer-icon">
+                <svg class="join__icon">
                   <use href="./images/icon/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="join__item">
               <a
-                class="footer-item-link"
+                class="join__link"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="иконка Твиттер"
               >
-                <svg class="footer-icon">
+                <svg class="join__icon">
                   <use href="./images/icon/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="join__item">
               <a
-                class="footer-item-link"
+                class="join__link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="иконка Фейсбук"
               >
-                <svg class="footer-icon">
+                <svg class="join__icon">
                   <use href="./images/icon/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-item">
+            <li class="join__item">
               <a
-                class="footer-item-link"
+                class="join__link"
                 href="https://ua.linkedin.com"
                 target="_blank"
                 rel="noopener norerrer"
                 aria-label="иконка Линкедин"
               >
-                <svg class="footer-icon">
+                <svg class="join__icon">
                   <use href="./images/icon/sprite.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+
         <div class="subscribe">
-          <b class="join-title">Подпишитесь на рассылку</b>
+          <b class="join__title">Подпишитесь на рассылку</b>
 
           <form class="form-footer">
-            <label for="mail-footer" class="form-label-footer">
+            <label for="mail-footer" class="form-footer__label">
               <input
                 type="email"
-                class="form-input-footer"
+                class="form-footer__input"
                 name="mail"
                 id="mail-footer"
                 placeholder="Email"
               />
             </label>
-            <button type="submit" class="btn btn-subscribe">
+            <button type="submit" class="btn form-footer__btn">
               Подписаться
-              <svg class="icon-form-telegram">
+              <svg class="form-footer__icon">
                 <use href="./images/icon/sprite.svg#form-telegram"></use>
               </svg>
             </button>
